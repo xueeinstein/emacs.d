@@ -48,6 +48,7 @@
 (require-package 'diminish)
 (require-package 'scratch)
 (require-package 'mwe-log-commands)
+(require-package 'find-file-in-project)
 
 (require 'init-frame-hooks)
 (require 'init-xterm)
@@ -114,6 +115,10 @@
 
 (require 'init-dash)
 (require 'init-ledger)
+
+;; my new config
+(require 'init-neotree)
+
 ;; Extra packages which don't require any configuration
 
 (require-package 'gnuplot)

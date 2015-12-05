@@ -118,6 +118,7 @@
 
 ;; my new config
 (require 'init-neotree)
+(require 'init-evil)
 
 ;; Extra packages which don't require any configuration
 

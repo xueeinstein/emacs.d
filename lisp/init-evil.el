@@ -9,7 +9,9 @@
 (evil-leader/set-key
   "e" 'find-file
   "b" 'switch-to-buffer
-  "k" 'kill-buffer)
+  "k" 'kill-buffer
+  "s" 'split-window-vertically
+  "v" 'split-window-horizontally)
 
 (eval-after-load 'hideshow
   '(progn

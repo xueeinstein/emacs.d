@@ -1,6 +1,7 @@
 ;; setup for evil mode
 (require-package 'evil)
 (require-package 'evil-leader)
+(require-package 'fic-mode)
 
 (global-evil-leader-mode)
 (evil-mode 1)
@@ -31,5 +32,7 @@
 (add-hook 'prog-mode-hook 'hs-minor-mode)
 ;; add line-mode hook to programming mode
 (add-hook 'prog-mode-hook 'linum-mode)
+;; hightlight todos
+(add-hook 'prog-mode-hook 'fic-mode)
 
 (provide 'init-evil)

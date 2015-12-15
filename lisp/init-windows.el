@@ -92,5 +92,20 @@ Call a second time to restore the original window configuration."
 (unless (memq window-system '(nt w32))
   (windmove-default-keybindings 'control))
 
+;; scroll other window
+(defun scroll-other-window-up ()
+  "Scroll the other window one line up."
+  (interactive)
+  (scroll-other-window -5))
+
+(defun scroll-other-window-down ()
+  "Scroll the other window one line down."
+  (interactive)
+  (scroll-other-window 5))
+
+(global-set-key (kbd "M-+") 'scroll-other-window-up)
+(global-set-key (kbd "C-M-_") 'scroll-other-window-down)
+
+
 
 (provide 'init-windows)

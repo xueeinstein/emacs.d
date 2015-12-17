@@ -42,6 +42,12 @@
        (define-key evil-normal-state-map "zf" 'hs-hide-block))
      (add-hook 'hs-minor-mode-hook 'evil-hs-setup)))
 
+;; unbind M-. which is defaultly binding to edit-definition
+(eval-after-load 'evil
+  '(progn
+     (define-key evil-normal-state-map (kbd "M-.") nil)
+     (define-key evil-normal-state-map (kbd "C-c M-.") 'evil-repeat-pop-next)))
+
 ;; add hs-minor-mode hook to programming mode
 (add-hook 'prog-mode-hook 'hs-minor-mode)
 ;; add line-mode hook to programming mode

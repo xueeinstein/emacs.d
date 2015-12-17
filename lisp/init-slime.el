@@ -22,7 +22,6 @@
   (slime-setup '(slime-repl slime-fuzzy))
   (setq slime-complete-symbol*-fancy t)
   (setq slime-complete-symbol-function 'slime-fuzzy-complete-symbol)
-  (define-key slime-mode-map (kbd "C-c M-.") 'slime-edit-definition)
   (add-hook 'slime-mode-hook 'sanityinc/slime-setup))
 
 ;;; REPL

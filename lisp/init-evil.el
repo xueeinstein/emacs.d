@@ -48,11 +48,18 @@
      (define-key evil-normal-state-map (kbd "M-.") nil)
      (define-key evil-normal-state-map (kbd "C-c M-.") 'evil-repeat-pop-next)))
 
+;; reset hightlight keywords in fic-mode
+(eval-after-load 'fic-mode
+  '(progn
+     (message "fic mode loaded...")
+     (setq fic-highlighted-words '("FIXME" "TODO" "BUG" "KLUDGE" "NOTE"))
+     (setq fic-search-list-re (regexp-opt fic-highlighted-words 'words))))
+
 ;; add hs-minor-mode hook to programming mode
 (add-hook 'prog-mode-hook 'hs-minor-mode)
 ;; add line-mode hook to programming mode
 (add-hook 'prog-mode-hook 'linum-mode)
-;; hightlight todos
+;; hightlight attention keywords
 (add-hook 'prog-mode-hook 'fic-mode)
 
 (provide 'init-evil)

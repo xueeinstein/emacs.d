@@ -30,6 +30,9 @@
                                                 "http://melpa.org/packages/"
                                               "https://melpa.org/packages/")))
 
+;; For elpy
+(add-to-list 'package-archives '("elpy" . "http://marmalade-repo.org/packages/"))
+
 
 
 ;; If gpg cannot be found, signature checking will fail, so we

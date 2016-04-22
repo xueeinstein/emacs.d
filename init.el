@@ -119,6 +119,7 @@
 ;; my new config
 (require 'init-neotree)
 (require 'init-evil)
+(require 'init-zencoding)
 
 ;; Extra packages which don't require any configuration
 

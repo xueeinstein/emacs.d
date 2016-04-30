@@ -2,16 +2,20 @@
 (require-package 'evil)
 (require-package 'evil-leader)
 (require-package 'fic-mode)
+(require-package 'avy)
 
 (global-evil-leader-mode)
 (evil-mode 1)
 
 ;; setup for evil-nerd-commenter
 ;; Emacs key bindings
-(global-set-key (kbd "M-;") 'evilnc-comment-or-uncomment-lines)
 (global-set-key (kbd "C-c l") 'evilnc-quick-comment-or-uncomment-to-the-line)
 (global-set-key (kbd "C-c c") 'evilnc-copy-and-comment-lines)
 (global-set-key (kbd "C-c p") 'evilnc-comment-or-uncomment-paragraphs)
+
+;; setup for avy
+(global-set-key (kbd "M-;") 'avy-goto-word-0)
+(global-set-key (kbd "M-l") 'avy-goto-line)
 
 (evil-leader/set-leader ",")
 (evil-leader/set-key

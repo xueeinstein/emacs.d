@@ -31,7 +31,7 @@
                                               "https://melpa.org/packages/")))
 
 ;; For elpy
-(add-to-list 'package-archives '("elpy" . "http://marmalade-repo.org/packages/"))
+;(add-to-list 'package-archives '("elpy" . "http://marmalade-repo.org/packages/"))
 
 
 

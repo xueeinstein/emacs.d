@@ -3,6 +3,7 @@
 (require-package 'evil-leader)
 (require-package 'fic-mode)
 (require-package 'avy)
+(require 'evil-easymotion)
 
 (global-evil-leader-mode)
 (evil-mode 1)
@@ -24,6 +25,8 @@
   "k" 'kill-buffer
   "s" 'split-window-vertically
   "v" 'split-window-horizontally
+  "f" (evilem-create 'evil-forward-WORD-begin)
+  "a" (evilem-create 'evil-backward-WORD-begin)
   "ci" 'evilnc-comment-or-uncomment-lines
   "cl" 'evilnc-quick-comment-or-uncomment-to-the-line
   "ll" 'evilnc-quick-comment-or-uncomment-to-the-line

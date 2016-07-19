@@ -121,6 +121,7 @@
 (require 'init-evil)
 (require 'init-zencoding)
 (require 'init-ess)
+(require 'init-buffer-move)
 
 ;; Extra packages which don't require any configuration
 

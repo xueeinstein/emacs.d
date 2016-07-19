@@ -21,8 +21,8 @@
 ;; hook AC into completion-at-point
 (defun sanityinc/auto-complete-at-point ()
   (when (and (not (minibufferp))
-	     (fboundp 'auto-complete-mode)
-	     auto-complete-mode)
+            (fboundp 'auto-complete-mode)
+            auto-complete-mode)
     #'auto-complete))
 
 (defun sanityinc/never-indent ()

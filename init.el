@@ -49,7 +49,6 @@
 (require-package 'scratch)
 (require-package 'mwe-log-commands)
 (require-package 'find-file-in-project)
-(require 'ess-site)
 
 (require 'init-frame-hooks)
 (require 'init-xterm)
@@ -121,6 +120,7 @@
 (require 'init-neotree)
 (require 'init-evil)
 (require 'init-zencoding)
+(require 'init-ess)
 
 ;; Extra packages which don't require any configuration
 

@@ -49,6 +49,7 @@
 (require-package 'scratch)
 (require-package 'mwe-log-commands)
 (require-package 'find-file-in-project)
+(require 'ess-site)
 
 (require 'init-frame-hooks)
 (require 'init-xterm)

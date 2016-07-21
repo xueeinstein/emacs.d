@@ -120,6 +120,7 @@
 (require 'init-neotree)
 (require 'init-evil)
 (require 'init-zencoding)
+(require 'init-elpy)
 (require 'init-ess)
 (require 'init-buffer-move)
 

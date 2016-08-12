@@ -123,6 +123,7 @@
 (require 'init-elpy)
 (require 'init-ess)
 (require 'init-buffer-move)
+(require 'init-yasnippet)
 
 ;; Extra packages which don't require any configuration
 

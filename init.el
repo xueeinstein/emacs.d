@@ -124,6 +124,7 @@
 (require 'init-ess)
 (require 'init-buffer-move)
 (require 'init-yasnippet)
+(require 'init-org-trello)
 
 ;; Extra packages which don't require any configuration
 

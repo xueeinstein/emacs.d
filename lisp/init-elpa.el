@@ -14,6 +14,8 @@
 
 ;;; Standard package repositories
 
+(setq package-archives nil)
+
 (when (< emacs-major-version 24)
   ;; Mainly for ruby-mode
   (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/")))

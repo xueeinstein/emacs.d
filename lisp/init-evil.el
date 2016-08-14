@@ -68,7 +68,5 @@
 (add-hook 'prog-mode-hook 'linum-mode)
 ;; hightlight attention keywords
 (add-hook 'prog-mode-hook 'fic-mode)
-;; add yas-minor-mode hook to programming mode
-(add-hook 'prog-mode-hook 'yas-minor-mode)
 
 (provide 'init-evil)

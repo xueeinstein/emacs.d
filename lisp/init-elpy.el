@@ -1,5 +1,5 @@
-(package-initialize)
-;(require-package 'elpy)
+;(package-initialize)
+(require-package 'elpy)
 (elpy-enable)
 (elpy-use-ipython)
 

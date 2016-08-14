@@ -1,6 +1,7 @@
-
 ;;; This file bootstraps the configuration, which is divided into
 ;;; a number of other files.
+
+(setq gc-cons-threshold 100000000)
 
 (let ((minver "23.3"))
   (when (version<= emacs-version "23.1")
@@ -118,12 +119,12 @@
 
 ;; my new config
 (require 'init-neotree)
+(require 'init-yasnippet)
 (require 'init-evil)
 (require 'init-zencoding)
 (require 'init-elpy)
 (require 'init-ess)
 (require 'init-buffer-move)
-(require 'init-yasnippet)
 (require 'init-org-trello)
 
 ;; Extra packages which don't require any configuration

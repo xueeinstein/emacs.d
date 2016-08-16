@@ -3,6 +3,9 @@
 (elpy-enable)
 (elpy-use-ipython)
 
+;; use jedi for autocomplete, because rope has bug for python3
+(setq elpy-rpc-backend "jedi")
+
 (defun elpy-python2 ()
   (interactive)
   (setq elpy-rpc-python-command "python2")

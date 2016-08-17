@@ -2,8 +2,12 @@
 (add-hook 'html-mode-hook (lambda () (tidy-build-menu html-mode-map)))
 
 (require-package 'tagedit)
+
 (after-load 'sgml-mode
   (tagedit-add-paredit-like-keybindings)
+  ;; reset C-right and C-left key binding
+  (define-key tagedit-mode-map (kbd "C-<right>") nil)
+  (define-key tagedit-mode-map (kbd "C-<left>") nil)
   (add-hook 'sgml-mode-hook (lambda () (tagedit-mode 1))))
 
 (add-auto-mode 'html-mode "\\.\\(jsp\\|tmpl\\)\\'")

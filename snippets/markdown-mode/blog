@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: blog
+# key: blog
+# --
+---
+layout: ${1:post}
+type: ${2:standard}
+title: ${3:title}
+headline: ${4:headline}
+description:
+category: ${5:category}
+tags: [${6:tags}]
+keywords: [${7:keywords}]
+imagefeature: "${8:default_bg.jpg}"
+comments: true
+mathjax: null
+published: ${9:true}
+---

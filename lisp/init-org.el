@@ -328,7 +328,8 @@ typical word processor."
   (define-key org-mode-map (kbd "C-M-<up>") 'org-up-element)
   (when *is-a-mac*
     (define-key org-mode-map (kbd "M-h") nil)
-    (define-key org-mode-map (kbd "C-c g") 'org-mac-grab-link)))
+    (define-key org-mode-map (kbd "C-c g") 'org-mac-grab-link))
+  (setcdr (assoc "\\.pdf\\'" org-file-apps) "evince %s"))
 
 (after-load 'org
   (org-babel-do-load-languages

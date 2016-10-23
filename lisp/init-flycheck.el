@@ -7,5 +7,10 @@
 
   (setq flycheck-display-errors-function #'flycheck-display-error-messages-unless-error-list))
 
+(defun flycheck-cpp-11 ()
+  (interactive)
+  (setq flycheck-gcc-language-standard "c++11")
+  (setq flycheck-checker "c/c++-gcc"))
+
 
 (provide 'init-flycheck)

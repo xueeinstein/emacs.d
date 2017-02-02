@@ -1,4 +1,4 @@
-(require-package 'csv-mode)
+(require-package 'csv)
 (require-package 'csv-nav)
 
 (add-auto-mode 'csv-mode "\\.[Cc][Ss][Vv]\\'")

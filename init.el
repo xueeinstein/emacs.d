@@ -51,6 +51,13 @@
 (require-package 'scratch)
 (require-package 'mwe-log-commands)
 (require-package 'find-file-in-project)
+(require-package 'neotree)
+(require-package 'yasnippet)
+(require-package 'evil-easymotion)
+(require-package 'zencoding-mode)
+(require-package 'ess)
+(require-package 'buffer-move)
+(require-package 'org-trello)
 
 (require 'init-frame-hooks)
 (require 'init-xterm)

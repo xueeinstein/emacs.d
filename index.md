@@ -1,6 +1,16 @@
+Emacs.d - ShadowThink
+==========================
+
+#### Table of Contents
+
+   * [Emacs.d - ShadowThink](#emacsd---shadowthink)
+      * [Introduction](#introduction)
+      * [Requirements](#requirements)
+      * [Installation](#installation)
+
 ## Introduction
 
-This Emacs configuration is forked from [Steve Purcell](https://github.com/purcell/emacs.d). Currently, [emacs.d](https://github.com/xueeinstein/emacs.d) is maintained by [Bill Xue](https://shadowthink.com).
+This Emacs configuration is forked from [Steve Purcell](https://github.com/purcell/emacs.d). Currently, [emacs.d](https://github.com/xueeinstein/emacs.d) is maintained by [Bill Xue](https://shadowthink.com), becoming more friendly for previous Vim users.
 
 Emacs itself comes with support for many programming languages. This config adds improved defaults and extended support for the following:
 
@@ -19,7 +29,9 @@ In particular, there's a nice config for tab autocompletion, and *flycheck* is u
 
 ## Requirements
 
-To support all features of numbers of key packages, Emacs 24 and above is required. Other programs are also required by [Elpy](https://github.com/jorgenschaefer/elpy). Please set up the required package before installation.
+To support all features of numbers of key packages, Emacs 24 and above is required. Other programs are also required by third part packages. Please set up the required package before installation.
+
+* `elpy`: rope/jedi, flake8, importmagic, autopep8, ipython
 
 ## Installation
 

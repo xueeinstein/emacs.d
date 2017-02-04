@@ -45,6 +45,7 @@
 ;; Load configs for specific features and modes
 ;;----------------------------------------------------------------------------
 
+(require-package 'helm)
 (require-package 'wgrep)
 (require-package 'project-local-variables)
 (require-package 'diminish)
@@ -72,7 +73,8 @@
 (require 'init-flycheck)
 
 (require 'init-recentf)
-(require 'init-ido)
+;;(require 'init-ido)
+(require 'init-helm)
 (require 'init-hippie-expand)
 (require 'init-auto-complete)
 (require 'init-windows)

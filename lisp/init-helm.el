@@ -22,7 +22,7 @@
       helm-echo-input-in-header-line t)
 
 (setq helm-autoresize-max-height 0)
-(setq helm-autoresize-min-height 30)
+(setq helm-autoresize-min-height 60)
 (helm-autoresize-mode 1)
 
 (global-set-key (kbd "M-x") 'helm-M-x)

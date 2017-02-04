@@ -3,6 +3,7 @@
 (require-package 'evil-leader)
 (require-package 'fic-mode)
 (require-package 'avy)
+(require-package 'evil-nerd-commenter)
 (require 'evil-easymotion)
 
 (global-evil-leader-mode)
@@ -23,7 +24,7 @@
   "e" 'find-file
   "b" 'switch-to-buffer
   "k" 'kill-buffer
-  "s" 'split-window-vertically
+  "h" 'split-window-vertically
   "v" 'split-window-horizontally
   "f" (evilem-create 'evil-forward-WORD-begin)
   "a" (evilem-create 'evil-backward-WORD-begin)

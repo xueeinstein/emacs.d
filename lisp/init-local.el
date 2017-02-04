@@ -22,5 +22,6 @@
   )
 (setq matlab-shell-mode-hook 'my-matlab-shell-mode-hook)
 
+(global-set-key (kbd "C-c C-f") 'ffip) ; find file in project
 
 (provide 'init-local)

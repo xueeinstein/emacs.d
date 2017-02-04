@@ -24,4 +24,8 @@
 (define-key elpy-mode-map (kbd "<C-up>") nil)
 (define-key elpy-mode-map (kbd "<C-down>") nil)
 
+;; shell send current statement
+(define-key global-map (kbd "C-c C-j") nil)
+(define-key elpy-mode-map (kbd "C-c C-j") 'elpy-shell-send-current-statement)
+
 (provide 'init-elpy)

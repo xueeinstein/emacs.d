@@ -18,10 +18,14 @@ Emacs.d - ShadowThink
             * [Find files](#find-files)
             * [Search in files](#search-in-files)
          * [Elpy Basics](#elpy-basics)
-            * [Interactive python](#interactive-python)
+            * [Interactive Python](#interactive-python)
             * [Documentation](#documentation-1)
             * [Testing](#testing)
             * [Refactoring](#refactoring)
+         * [ESS Basics](#ess-basics)
+            * [Interactive R](#interactive-r)
+            * [Documentation](#documentation-2)
+            * [Debug](#debug)
 
 ## Introduction
 
@@ -119,7 +123,7 @@ To search string in files under current folder, you can use `helm` with `ack-gre
 
 ### Elpy Basics
 
-#### Interactive python
+#### Interactive Python
 
 * `M-x elpy-python2` select to use Python2 configuration.
 * `M-x elpy-python3` select to use Python3 configuration.
@@ -140,3 +144,22 @@ To search string in files under current folder, you can use `helm` with `ack-gre
 
 * `C-c C-r r`, `M-x elpy-refactor` run the Elpy refactoring interface for Python code based on `rope`.
 * `C-c C-r f`, `M-x elpy-format-code` format code using the available formatter.
+
+### ESS Basics
+
+#### Interactive R
+
+* `M-x R` start a R inferior process.
+* `C-c C-z` switch between R inferior buffer and script buffer.
+* `C-c C-l`, `M-x ess-load-file` prompt for a script to load into the ESS process using `source()`.
+* `C-c C-j` eval current statement in R inferior.
+* `C-c C-r` eval current region in R inferior.
+* `C-c C-q` stop R inferior process.
+
+#### Documentation
+
+Use `C-c C-v` to pop up a help buffer for an R object or function.
+
+#### Debug
+
+It's recommended to use `C-c C-t ?` to see the help information for ESS tracebug. A short tutorial is at [https://code.google.com/archive/p/ess-tracebug/wikis/GettingStarted.wiki](https://code.google.com/archive/p/ess-tracebug/wikis/GettingStarted.wiki).

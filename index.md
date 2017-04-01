@@ -26,6 +26,8 @@ Emacs.d - ShadowThink
             * [Interactive R](#interactive-r)
             * [Documentation](#documentation-2)
             * [Debug](#debug)
+         * [Org Mode](#org-mode)
+            * [Take Notes](#take-notes)
 
 ## Introduction
 
@@ -163,3 +165,26 @@ Use `C-c C-v` to pop up a help buffer for an R object or function.
 #### Debug
 
 It's recommended to use `C-c C-t ?` to see the help information for ESS tracebug. A short tutorial is at [https://code.google.com/archive/p/ess-tracebug/wikis/GettingStarted.wiki](https://code.google.com/archive/p/ess-tracebug/wikis/GettingStarted.wiki).
+
+### Org Mode
+
+#### Take Notes
+
+Org files can be converted to pdf or html files easily. With Latex supports, it's an ideal tool to take notes especially for scientific notes. To enable Latex supports, you need to add following header to your org file.
+
+```
+#+TITLE: Your Title
+#+AUTHOR: Your Name
+#+EMAIL: your@email.com
+#+LaTeX_CLASS: article
+#+LaTeX_HEADER: \usepackage[ttscale=.875]{libertine}
+#+LaTeX_HEADER: \usepackage{sectsty}
+#+LaTeX_HEADER: \sectionfont{\normalfont\scshape}
+#+LaTeX_HEADER: \subsectionfont{\normalfont\itshape}
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+OPTIONS: H:2 num:nil toc:nil \n:nil @:t ::t |:t ^:{} _:{} *:t TeX:t LaTeX:t
+#+STARTUP: latexpreview
+```
+
+Use `C-c C-e` to toggle org file export dispatcher.

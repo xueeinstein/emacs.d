@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: CodeBlock
+# key: code_
+# --
+
+\begin{lstlisting}
+$1
+\end{lstlisting}

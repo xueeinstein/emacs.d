@@ -134,8 +134,29 @@
 (require 'init-zencoding)
 (require 'init-elpy)
 (require 'init-ess)
+(require 'init-cpp)
 (require 'init-buffer-move)
 (require 'init-org-trello)
+
+;; config AUCTeX
+(setq TeX-auto-save t)
+(setq TeX-parse-self t)
+(setq-default TeX-master nil)
+
+(add-hook 'LaTeX-mode-hook 'visual-line-mode)
+(add-hook 'LaTeX-mode-hook 'flyspell-mode)
+(add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
+(add-hook 'LaTeX-mode-hook 'TeX-source-correlate-mode)
+
+(add-hook 'LaTeX-mode-hook 'turn-on-reftex)
+(setq reftex-plug-into-AUCTeX t)
+(setq TeX-PDF-mode t)
+
+;config view program
+(setq TeX-view-program-selection
+      '((output-dvi "DVI Viewer")
+        (output-pdf "PDF Viewer")
+        (output-html "HTML Viewer")))
 
 ;; Extra packages which don't require any configuration
 

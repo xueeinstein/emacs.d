@@ -103,7 +103,7 @@ Call a second time to restore the original window configuration."
   (interactive)
   (scroll-other-window 5))
 
-(global-set-key (kbd "M-+") 'scroll-other-window-up)
+(global-set-key (kbd "C-M-+") 'scroll-other-window-up)
 (global-set-key (kbd "C-M-_") 'scroll-other-window-down)
 
 

@@ -70,4 +70,11 @@
 ;; hightlight attention keywords
 (add-hook 'prog-mode-hook 'fic-mode)
 
+;; show current function at header line
+(add-hook 'prog-mode-hook 'which-function-mode)
+(setq-default header-line-format
+              '((which-func-mode ("" which-func-format " "))))
+(setq mode-line-misc-info
+      (assq-delete-all 'which-func-mode mode-line-misc-info))
+
 (provide 'init-evil)

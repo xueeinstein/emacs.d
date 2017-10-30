@@ -6,11 +6,17 @@
 
 
 ;; Make "C-x o" prompt for a target window when there are more than 2
-(require-package 'switch-window)
-(require 'switch-window)
-(setq-default switch-window-shortcut-style 'alphabet)
-(setq-default switch-window-timeout nil)
-(global-set-key (kbd "C-x o") 'switch-window)
+;(require-package 'switch-window)
+;(require 'switch-window)
+;(setq-default switch-window-shortcut-style 'alphabet)
+;(setq-default switch-window-timeout nil)
+;(global-set-key (kbd "C-x o") 'switch-window)
+(require-package 'ace-window)
+(setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
+(custom-set-faces
+ '(aw-leading-char-face
+   ((t (:inherit ace-jump-face-foreground :height 3.0)))))
+(global-set-key (kbd "C-x o") 'ace-window)
 
 
 ;;----------------------------------------------------------------------------

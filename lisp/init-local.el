@@ -22,6 +22,20 @@
   )
 (setq matlab-shell-mode-hook 'my-matlab-shell-mode-hook)
 
+;; ==================================
+;; project file retriever
+;; ==================================
 (global-set-key (kbd "C-c C-f") 'ffip) ; find file in project
+
+;; ==================================
+;; set font size in frame
+;; ==================================
+(defun set-font-size ()
+  "Prompt user to enter a new font size"
+  (interactive)
+  (setq font-new-size
+        (concat "DejaVu Sans Mono " (read-string "New font size:")))
+  (set-frame-font font-new-size)
+  (message "Font: %s" font-new-size))
 
 (provide 'init-local)

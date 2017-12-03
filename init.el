@@ -137,6 +137,7 @@
 (require 'init-cpp)
 (require 'init-buffer-move)
 (require 'init-org-trello)
+(require 'init-org-brain)
 (require 'init-ssh-deploy)
 
 ;; config AUCTeX

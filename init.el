@@ -137,6 +137,7 @@
 (require 'init-cpp)
 (require 'init-buffer-move)
 (require 'init-org-trello)
+(require 'init-ssh-deploy)
 
 ;; config AUCTeX
 (setq TeX-auto-save t)

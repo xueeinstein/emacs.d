@@ -132,6 +132,7 @@ To search string in files under current folder, you can use `helm` with `ack-gre
 * `C-c C-z`, `M-x elpy-shell-switch-to-shell` switch to buffer with a Python interpreter running, starting one if necessary.
 * `C-c C-j`, `M-x elpy-shell-send-current-statement` send current statement to Python shell.
 * `C-c C-c`, `M-x elpy-shell-send-region-or-buffer` whenever you are in an Elpy buffer, C-c C-c will send Python code to the subprocess. If there is an active region, that region will be sent; if not, the whole buffer is sent.
+* `C-c C-o` `M-x s elpy-occur-definitions` create a new buffer with a list of all the class and function signatures, and the list provides a quick link to corresponding source code.
 
 #### Documentation
 

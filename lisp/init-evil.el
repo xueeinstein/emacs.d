@@ -5,6 +5,7 @@
 (require-package 'avy)
 (require-package 'evil-nerd-commenter)
 (require 'evil-easymotion)
+(require 'evil-vimish-fold)
 
 (global-evil-leader-mode)
 (evil-mode 1)
@@ -49,6 +50,11 @@
        (define-key evil-normal-state-map "zo" 'hs-show-block)
        (define-key evil-normal-state-map "zf" 'hs-hide-block))
      (add-hook 'hs-minor-mode-hook 'evil-hs-setup)))
+
+(eval-after-load 'vimish-fold
+  '(progn
+     (define-key evil-normal-state-map "zv" 'vimish-fold)
+     (define-key evil-normal-state-map "zd" 'vimish-fold-delete)))
 
 ;; unbind M-. which is defaultly binding to edit-definition
 (eval-after-load 'evil

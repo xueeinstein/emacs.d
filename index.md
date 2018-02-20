@@ -8,6 +8,7 @@ Emacs.d - ShadowThink
       * [Requirements](#requirements)
       * [Installation](#installation)
       * [Documentation](#documentation)
+         * [Emacs Basics](#emacs-basics)
          * [Evil Group Basics](#evil-group-basics)
             * [Cursor movement](#cursor-movement)
             * [Code folding](#code-folding)
@@ -67,7 +68,11 @@ Upon starting up Emacs for the first time, further third-party packages will be 
 
 ## Documentation
 
-### Evil Group Basics
+### Emacs basics
+
+* `C-x r l` open bookmarks.
+
+### Evil group basics
 
 Evil is an extensible vi layer for Emacs. In this configuration, to make it more like my [Vim configuration](https://github.com/xueeinstein/dotfiles/blob/master/.vimrc), I setup supplementary package like `evil-leader`, `evil-nerd-commenter`, `hideshow`, `neotree`, `fic-mode` and `avy`. Here, I call them __Evil group__.
 

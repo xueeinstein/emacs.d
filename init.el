@@ -160,6 +160,11 @@
         (output-pdf "PDF Viewer")
         (output-html "HTML Viewer")))
 
+(defun set-as-default-bib ()
+  "Set current bib file as reftex-default-bibliography."
+  (interactive)
+  (setq reftex-default-bibliography (list (buffer-file-name))))
+
 ;; Extra packages which don't require any configuration
 
 (require-package 'gnuplot)

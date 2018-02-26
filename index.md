@@ -9,6 +9,8 @@ Emacs.d - ShadowThink
       * [Installation](#installation)
       * [Documentation](#documentation)
          * [Emacs Basics](#emacs-basics)
+            * [Quick file access](#quick-file-access)
+            * [Academic writing](#academic-writing)
          * [Evil Group Basics](#evil-group-basics)
             * [Cursor movement](#cursor-movement)
             * [Code folding](#code-folding)
@@ -70,7 +72,19 @@ Upon starting up Emacs for the first time, further third-party packages will be 
 
 ### Emacs basics
 
+#### Quick file access
+
 * `C-x r l` open bookmarks.
+
+#### Academic writing
+
+Some handy shortcuts for LaTex editing:
+
+* `M-RET`, `M-x latex-insert-iterm` insert '\iterm' quickly.
+* `C-c C-o`, `M-x latex-insert-block` insert block '\begin{\*} \end{\*}' quickly.
+
+To cite papers, you need to set bib file at first: open your bib file and do `M-x set-as-default-bib`.
+Then cite paper use `M-x reftex-cite`.
 
 ### Evil group basics
 

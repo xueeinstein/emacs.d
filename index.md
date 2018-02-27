@@ -87,6 +87,8 @@ Citation: set bib file at first (open your bib file and do `M-x set-as-default-b
 
 Spell checking: install __aspell-en__ dictionary, then do `M-x ispell-buffer`.
 
+Table of content: do `M-x reftex-toc`.
+
 ### Evil group basics
 
 Evil is an extensible vi layer for Emacs. In this configuration, to make it more like my [Vim configuration](https://github.com/xueeinstein/dotfiles/blob/master/.vimrc), I setup supplementary package like `evil-leader`, `evil-nerd-commenter`, `hideshow`, `neotree`, `fic-mode` and `avy`. Here, I call them __Evil group__.

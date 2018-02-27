@@ -83,8 +83,9 @@ Some handy shortcuts for LaTex editing:
 * `M-RET`, `M-x latex-insert-iterm` insert '\iterm' quickly.
 * `C-c C-o`, `M-x latex-insert-block` insert block '\begin{\*} \end{\*}' quickly.
 
-To cite papers, you need to set bib file at first: open your bib file and do `M-x set-as-default-bib`.
-Then cite paper use `M-x reftex-cite`.
+Citation: set bib file at first (open your bib file and do `M-x set-as-default-bib`), then cite paper use `M-x reftex-cite`.
+
+Spell checking: install __aspell-en__ dictionary, then do `M-x ispell-buffer`.
 
 ### Evil group basics
 

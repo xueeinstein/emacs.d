@@ -38,4 +38,10 @@
   (set-frame-font font-new-size)
   (message "Font: %s" font-new-size))
 
+;; ==================================
+;; call reftex-citation
+;; ==================================
+(eval-after-load 'reftex
+  '(define-key reftex-mode-map (kbd "C-x c") 'reftex-citation))
+
 (provide 'init-local)

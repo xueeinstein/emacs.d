@@ -57,10 +57,13 @@
      (define-key evil-normal-state-map "zd" 'vimish-fold-delete)))
 
 ;; unbind M-. which is defaultly binding to edit-definition
+;; shortcut to search current word easily
 (eval-after-load 'evil
   '(progn
      (define-key evil-normal-state-map (kbd "M-.") nil)
-     (define-key evil-normal-state-map (kbd "C-c M-.") 'evil-repeat-pop-next)))
+     (define-key evil-normal-state-map (kbd "C-c M-.") 'evil-repeat-pop-next)
+     (define-key evil-normal-state-map ")" 'evil-search-word-forward)
+     (define-key evil-normal-state-map "(" 'evil-search-word-backward)))
 
 ;; reset hightlight keywords in fic-mode
 (eval-after-load 'fic-mode
@@ -82,5 +85,8 @@
               '((which-func-mode ("" which-func-format " "))))
 (setq mode-line-misc-info
       (assq-delete-all 'which-func-mode mode-line-misc-info))
+
+;; better code search like 'name_subname'
+(modify-syntax-entry ?_ "w" (standard-syntax-table))
 
 (provide 'init-evil)

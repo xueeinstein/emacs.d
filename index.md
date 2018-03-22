@@ -103,6 +103,8 @@ Inherit basic Vim cursor movement rules. For easy cursor motion, I configure Ema
 * `<leader> a` mark backword words at vim normal mode, and type marks to jump to the target word.
 * `M-;` mark all words, and type marks to jump to the target word.
 * `M-l` mark lines, and type marks to jump to the target line.
+* `)` search current cursor-focusing word forward.
+* `(` search current cursor-focusing word backward.
 
 #### Code folding
 

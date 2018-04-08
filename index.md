@@ -75,6 +75,7 @@ Upon starting up Emacs for the first time, further third-party packages will be 
 #### Quick file access
 
 * `C-x r l` open bookmarks.
+* `C-x r m` save current file to bookmarks. After this, you need to save bookmarks via `M-x bookmark-save`.
 
 #### Academic writing
 

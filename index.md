@@ -31,6 +31,7 @@ Emacs.d - ShadowThink
             * [Debug](#debug)
          * [Org Mode](#org-mode)
             * [Take Notes](#take-notes)
+      * [Other Material](#other-material)
 
 ## Introduction
 
@@ -216,3 +217,8 @@ Org files can be converted to pdf or html files easily. With Latex supports, it'
 ```
 
 Use `C-c C-e` to toggle org file export dispatcher.
+
+## Other Material
+
+* [Vim cheatsheet](/emacs.d/vim_cheat_sheet_for_programmers_print.png)
+* [Emacs cheatsheet](/emacs.d/emacs-cheat-sheet.png)

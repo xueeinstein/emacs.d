@@ -31,6 +31,7 @@ Emacs.d - ShadowThink
             * [Debug](#debug)
          * [Org Mode](#org-mode)
             * [Take Notes](#take-notes)
+            * [Babel](#babel)
       * [Other Material](#other-material)
 
 ## Introduction
@@ -217,6 +218,15 @@ Org files can be converted to pdf or html files easily. With Latex supports, it'
 ```
 
 Use `C-c C-e` to toggle org file export dispatcher.
+
+#### Babel
+
+__Org-babel__ is about letting many different languages working together in org mode blocks.
+
+* `<s TAB`, create a 'src' block in org mode quickly.
+* `C-c '`, `M-x org-edit-special`, edit the src block in another buffer.
+* `C-c C-c`, execute the src block code, supporting shell, python, R, ruby, ...
+* `C-c C-o`, open execution results in another buffer.
 
 ## Other Material
 

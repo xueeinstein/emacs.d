@@ -228,9 +228,19 @@ Organize your life with org mode agenda.
 * `Shif-Left`, change 'TODO' heading status consecutively. 
 * `C-c C-t`, change 'TODO' heading status by selection.
 * `C-c C-s`, make a schedule on current focused 'TODO' heading.
+* `C-c C-d`, make a deadline on current focused 'TODO' heading.
 * `M-x org-agenda-file-to-front`, add current org file to `org-agenda-files`.
 * `M-x org-remove-file`, remove current org file from `org-agenda-files`.
 * `C-c a a`, show agenda according to `org-agenda-files`.
+
+__In agenda view__
+
+* `M-x org-show-priority`, show weighted priority of current item.
+* `M-x org-agenda-priority-up`, `+`, increase the priority of the current item.
+* `M-x org-agenda-priority-down`, `-`, decrease the priority of the current item.
+* `M-x org-agenda-priority`, `,`, set the priority 'A-C' of the current item.
+* `M-x org-agenda-clock-in`, `I`, start the clock on the current item.
+* `M-x org-agenda-clock-out`, `O`, stop the previously started clock.
 
 #### Babel
 

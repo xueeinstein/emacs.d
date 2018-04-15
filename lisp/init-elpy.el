@@ -1,7 +1,9 @@
 ;(package-initialize)
 (require-package 'elpy)
 (elpy-enable)
-(elpy-use-ipython)
+                                        ;(elpy-use-ipython)
+(setq python-shell-interpreter "ipython"
+      python-shell-interpreter-args "-i --simple-prompt")
 
 ;; use jedi for autocomplete, because rope has bug for python3
 (setq elpy-rpc-backend "jedi")

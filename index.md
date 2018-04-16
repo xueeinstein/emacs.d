@@ -220,6 +220,11 @@ Org files can be converted to pdf or html files easily. With Latex supports, it'
 
 Use `C-c C-e` to toggle org file export dispatcher.
 
+One handy functionality in org mode is to link other files, and then you can jump to them easily with `C-c C-o`.
+
+* `M-x org-store-link`, store current line as a org link.
+* `C-c C-l`, `M-x org-insert-link`, insert previously saved org link.
+
 #### Agenda
 
 Organize your life with org mode agenda.

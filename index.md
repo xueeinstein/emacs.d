@@ -89,11 +89,11 @@ Some handy shortcuts for LaTex editing:
 * `M-RET`, `M-x latex-insert-iterm` insert '\iterm' quickly.
 * `C-c C-o`, `M-x latex-insert-block` insert block '\begin{\*} \end{\*}' quickly.
 
-Citation: set bib file at first (open your bib file and do `M-x set-as-default-bib`), then cite paper use `M-x reftex-cite`.
+Citation: set bib file at first (open your bib file and do `M-x set-as-default-bib`), then cite paper use `M-x reftex-citation`.
 
 Spell checking: install __aspell-en__ dictionary, then do `M-x ispell-buffer`.
 
-Table of content: do `C-c =` or `M-x reftex-toc`.
+Table of content: do `M-x reftex-toc`.
 
 ### Evil group basics
 

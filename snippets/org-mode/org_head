@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: org_head
+# key: org_head
+# --
+#+TITLE: $1
+#+AUTHOR: $2
+#+DATE: $3

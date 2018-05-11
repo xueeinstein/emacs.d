@@ -234,7 +234,7 @@ Organize your life with org mode agenda.
 * `C-c C-t`, change 'TODO' heading status by selection.
 * `C-c C-s`, make a schedule on current focused task heading, then type time like '+2d 8am-1pm' to schedule time.
 * `C-c C-d`, make a deadline on current focused task heading.
-* `M-x org-agenda-file-to-front`, add current org file to `org-agenda-files`.
+* `C-c [`, `M-x org-agenda-file-to-front`, add current org file to `org-agenda-files`.
 * `M-x org-remove-file`, remove current org file from `org-agenda-files`.
 * `C-c a a`, show agenda according to `org-agenda-files`.
 

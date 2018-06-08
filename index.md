@@ -237,6 +237,7 @@ Organize your life with org mode agenda.
 * `C-c [`, `M-x org-agenda-file-to-front`, add current org file to `org-agenda-files`.
 * `M-x org-remove-file`, remove current org file from `org-agenda-files`.
 * `C-c a a`, show agenda according to `org-agenda-files`.
+* `C-c .`, insert a timestamp.
 
 __In agenda view__
 

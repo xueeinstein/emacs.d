@@ -43,3 +43,4 @@ site-lisp/package/
 /.trello
 /request
 abbrev_defs
+session.*

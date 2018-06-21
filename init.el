@@ -139,6 +139,7 @@
 (require 'init-org-trello)
 (require 'init-org-brain)
 (require 'init-ssh-deploy)
+(require 'init-bing-dict)
 
 ;; config AUCTeX
 (setq TeX-auto-save t)

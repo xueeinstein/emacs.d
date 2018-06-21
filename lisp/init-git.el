@@ -31,6 +31,10 @@
 (when (maybe-require-package 'git-commit)
   (add-hook 'git-commit-mode-hook 'goto-address-mode))
 
+(after-load 'magit
+  (after-load 'diff-hl
+    (add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh)))
+
 
 (when *is-a-mac*
   (after-load 'magit

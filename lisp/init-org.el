@@ -323,6 +323,12 @@ typical word processor."
 ;;                   (re-search-backward "^[0-9]+:[0-9]+-[0-9]+:[0-9]+ " nil t))
 ;;                 (insert (match-string 0))))))
 
+(after-load 'org
+  (define-key org-mode-map (kbd "C-c C-f") nil)
+  (define-key org-mode-map (kbd "C-c C-b") nil)
+  (define-key org-mode-map (kbd "C-c f") 'org-forward-heading-same-level)
+  (define-key org-mode-map (kbd "C-c b") 'org-backward-heading-same-level)
+  (define-key org-mode-map (kbd "C-c C-f") 'ffip))
 
 (after-load 'org
   (define-key org-mode-map (kbd "C-M-<up>") 'org-up-element)

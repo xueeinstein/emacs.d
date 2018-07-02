@@ -145,6 +145,12 @@ Originally, in Emacs, we split window vertically by typing `C-x 3`, and split wi
 
 In this Emacs config, it has several git tools like `magit` and `vc`. It's recommended to use `C-x g` to trigger `M-x magit-status`. Next type `h` for help. Then you can follow the instruction to do kinds of git operations.
 
+When you write code, `diff-hl` model works to track modifications. Some useful shortcuts are:
+
+* `C-x v ]`, `M-x diff-hl-next-hunk` jump to next hunk of modification.
+* `C-x v [`, `M-x diff-hl-previous-hunk` jump to previous hunk of modification.
+* `C-x v =`, `M-x vc-diff` show `git diff` of current file in another buffer.
+
 #### Find files
 
 This function is powered by `find-file-in-project`. For a given project with version control like git, `find-file-in-project` will automatically set rot git root directory as the project root directory. Then you can use `C-c C-f` to trigger `M-x ffip` and quickly find project files.

@@ -140,6 +140,7 @@
 (require 'init-org-brain)
 (require 'init-ssh-deploy)
 (require 'init-bing-dict)
+(require 'init-elfeed)
 
 ;; config AUCTeX
 (setq TeX-auto-save t)

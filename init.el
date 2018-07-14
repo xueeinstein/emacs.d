@@ -141,6 +141,7 @@
 (require 'init-ssh-deploy)
 (require 'init-bing-dict)
 (require 'init-elfeed)
+(require 'init-fun)
 
 ;; config AUCTeX
 (setq TeX-auto-save t)

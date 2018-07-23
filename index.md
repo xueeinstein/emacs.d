@@ -244,6 +244,7 @@ Organize your life with org mode agenda.
 * `M-x org-remove-file`, remove current org file from `org-agenda-files`.
 * `C-c a a`, show agenda according to `org-agenda-files`.
 * `C-c .`, insert a timestamp.
+* `C-c ,`, set priority for TODO item.
 
 __In agenda view__
 

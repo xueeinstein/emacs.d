@@ -142,6 +142,8 @@
 (require 'init-bing-dict)
 (require 'init-elfeed)
 (require 'init-fun)
+(require 'init-anki)
+(require 'init-annotation)
 
 ;; config AUCTeX
 (setq TeX-auto-save t)

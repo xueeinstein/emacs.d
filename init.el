@@ -144,6 +144,7 @@
 (require 'init-fun)
 (require 'init-anki)
 (require 'init-annotation)
+(require 'init-pyim)
 
 ;; config AUCTeX
 (setq TeX-auto-save t)

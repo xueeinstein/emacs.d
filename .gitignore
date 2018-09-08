@@ -44,3 +44,4 @@ site-lisp/package/
 /request
 abbrev_defs
 session.*
+pyim/

@@ -385,7 +385,7 @@ typical word processor."
   (run-at-time "24:01" 3600 'org-agenda-to-appt)           ;; update appt list hourly
   (add-hook 'org-agenda-mode-hook
             '(lambda () (progn (setq appt-time-msg-list nil)
-                          (org-agenda-to-appt)))) ;; update appt list on agenda view
+                               (org-agenda-to-appt)))) ;; update appt list on agenda view
 
   (defun sys-notify (message)
     (progn
@@ -403,6 +403,10 @@ typical word processor."
     (sys-notify
      (format "Appointment in %s minutes: %s" min-to-app msg)))
   (setq appt-disp-window-function (function my-appt-display)))
+
+;; show important times
+(setq org-columns-default-format
+      "%25ITEM %TODO %3PRIORITY %TIMESTAMP %SCHEDULED %DEADLINE")
 
 
 (provide 'init-org)

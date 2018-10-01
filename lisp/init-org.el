@@ -358,6 +358,14 @@ typical word processor."
      (sql . nil)
      (sqlite . t))))
 
+(defun disable-org-babel-exp ()
+  (interactive)
+  (setq org-export-babel-evaluate nil))
+
+(defun enable-org-babel-exp ()
+  (interactive)
+  (setq org-export-babel-evaluate t))
+
 (after-load 'org
   (setq org-icalendar-combined-agenda-file "~/org/org.ics")
   (setq org-icalendar-include-todo '(all))

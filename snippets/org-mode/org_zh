@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: org_zh
+# key: org_zh
+# --
+#+LaTeX_HEADER: \usepackage{CJK}
+#+LaTeX_HEADER: \begin{CJK}{UTF8}{gbsn}

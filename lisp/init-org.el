@@ -167,6 +167,11 @@ typical word processor."
         `(("N" "Notes" tags "NOTE"
            ((org-agenda-overriding-header "Notes")
             (org-tags-match-list-sublevels t)))
+          ("G", "Google Tasks" todo, "TODO"
+           ((org-agenda-overriding-header "Emacs Org TODO List")
+            (org-agenda-entry-types '(:sexp :scheduled :deadline))
+            (org-agenda-prefix-format "%t%s"))
+           ("~/org/gtask.org"))
           ("g" "GTD"
            ((agenda "" nil)
             (tags "INBOX"

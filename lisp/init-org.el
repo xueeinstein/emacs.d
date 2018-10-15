@@ -146,11 +146,21 @@ typical word processor."
 
 (setq-default org-agenda-clockreport-parameter-plist '(:link t :maxlevel 3))
 
-
 (let ((active-project-match "-INBOX/PROJECT"))
 
   (setq org-stuck-projects
         `(,active-project-match ("NEXT")))
+
+  ;; new variable to store commom setting for all reviews
+  (setq org-agenda-review-settings
+        '((org-agenda-show-all-dates t)
+          (org-agenda-start-with-log-mode t)
+          (org-agenda-start-with-clockreport-mode t)
+          (org-agenda-archives-mode t)
+          ;; don't care if an entry is archived
+          (org-agenda-hide-tags-regexp
+           (concat org-agenda-hide-tags-regexp
+                   "\\|ARCHIVE"))))
 
   (setq org-agenda-compact-blocks t
         org-agenda-sticky t
@@ -168,7 +178,7 @@ typical word processor."
            ((org-agenda-overriding-header "Notes")
             (org-tags-match-list-sublevels t)))
           ("G", "Google Tasks" todo, "TODO"
-           ((org-agenda-overriding-header "Emacs Org TODO List")
+           ((org-agenda-overriding-header "Emacs Org")
             (org-agenda-entry-types '(:sexp :scheduled :deadline))
             (org-agenda-prefix-format "%t%s"))
            ("~/org/gtask.org"))
@@ -222,7 +232,27 @@ typical word processor."
             ;; (tags-todo "-NEXT"
             ;;            ((org-agenda-overriding-header "All other TODOs")
             ;;             (org-match-list-sublevels t)))
-            )))))
+            ))
+          ;; Review what is DONE in today, this week or this month
+          ("R" . "Review")
+          ("Rd", "Day in Review" agenda ""
+           ,(append org-agenda-review-settings
+                    '((org-agenda-span 'day)
+                      (org-agenda-overriding-header "Day in Review")))
+           ("~/org/review/day.org"))
+          ("Rw", "Week in Review" agenda ""
+           ,(append org-agenda-review-settings
+                    '((org-agenda-span 'week)
+                      (org-agenda-start-on-weekday 1)
+                      (org-agenda-overriding-header "Week in Review")))
+           ("~/org/review/week.org"))
+          ("Rm", "Month in Review" agenda ""
+           ,(append org-agenda-review-settings
+                    '((org-agenda-span 'month)
+                      (org-agenda-start-day "01")
+                      (org-read-date-prefer-future nil)
+                      (org-agenda-overriding-header "Month in Review")))
+           ("~/org/review/month.org")))))
 
 
 (add-hook 'org-agenda-mode-hook 'hl-line-mode)

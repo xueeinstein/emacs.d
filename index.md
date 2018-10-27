@@ -258,7 +258,7 @@ Time and record your work.
 
 * On item what you are going to do, execute `C-c C-x C-i` or `M-x org-clock-in`, just start a time recorder. Now working on the task!
 * Optionally, execute `C-c C-x C-e` or `M-x org-clock-modify-effort-estimate` to estimate your working time.
-* When you finished the task or have a reset, execute `C-c C-x C-o` or `M-x org-clock-out` to stop the timer.
+* When you finished the task or have a rest, execute `C-c C-x C-o` or `M-x org-clock-out` to stop the timer.
 * To resume previous task timer, execute `C-c C-x C-x` or `M-x org-clock-in-last`.
 * Others:
   * `C-c C-x C-q`, `M-x org-clock-cancel` to cancel the mistaken timer.

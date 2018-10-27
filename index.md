@@ -242,9 +242,31 @@ Organize your life with org mode agenda.
 * `C-c C-d`, make a deadline on current focused task heading.
 * `C-c [`, `M-x org-agenda-file-to-front`, add current org file to `org-agenda-files`.
 * `M-x org-remove-file`, remove current org file from `org-agenda-files`.
+* `C-c a`, check agenda related actions.
 * `C-c a a`, show agenda according to `org-agenda-files`.
 * `C-c .`, insert a timestamp.
 * `C-c ,`, set priority for TODO item.
+
+Connect your org agenda with *Google Tasks*
+
+First, use `C-c a G` to get TODO list, ten use `C-c a e` to export as `~/org/gtask.org`. Finally, you can use the tool *michel-orgmode* to push the *gtask.org* to your Google Tasks as a separate list.
+
+```
+michel-orgmode --push --orgfile ~/org/gtask.org --listname "From Emacs Org"
+```
+Time and record your work.
+
+* On item what you are going to do, execute `C-c C-x C-i` or `M-x org-clock-in`, just start a time recorder. Now working on the task!
+* Optionally, execute `C-c C-x C-e` or `M-x org-clock-modify-effort-estimate` to estimate your working time.
+* When you finished the task or have a reset, execute `C-c C-x C-o` or `M-x org-clock-out` to stop the timer.
+* To resume previous task timer, execute `C-c C-x C-x` or `M-x org-clock-in-last`.
+* Others:
+  * `C-c C-x C-q`, `M-x org-clock-cancel` to cancel the mistaken timer.
+  * `C-c C-x C-j`, `M-x org-clock-goto` to jump to active task.
+
+Review your work.
+
+* `C-c a R`, then select to review your DONE in day, week, or month.
 
 __In agenda view__
 

@@ -232,7 +232,7 @@ One handy functionality in org mode is to link other files, and then you can jum
 * `C-c C-l`, `M-x org-insert-link`, insert previously saved org link.
 
 Other useful links:
-* [Org table editor](https://orgmode.org/manual/Built_002din-table-editor.html)
+* [Org table editor](https://orgmode.org/manual/Built_002din-table-editor.html). Moreover you can use `C-c ~` to convert to table mode which is more flexible to use `C-c C-c <`, `C-c C-c >`, `C-c C-c {`, `C-c C-c }` to modify the cell size.
 
 #### Agenda
 

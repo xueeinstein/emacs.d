@@ -231,6 +231,9 @@ One handy functionality in org mode is to link other files, and then you can jum
 * `M-x org-store-link`, store current line as a org link.
 * `C-c C-l`, `M-x org-insert-link`, insert previously saved org link.
 
+Other useful links:
+* [Org table editor](https://orgmode.org/manual/Built_002din-table-editor.html)
+
 #### Agenda
 
 Organize your life with org mode agenda.

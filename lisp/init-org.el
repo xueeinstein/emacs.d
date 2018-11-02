@@ -393,6 +393,9 @@ typical word processor."
      (sql . nil)
      (sqlite . t))))
 
+(after-load 'org
+  (setq org-export-babel-evaluate nil))
+
 (defun disable-org-babel-exp ()
   (interactive)
   (setq org-export-babel-evaluate nil))

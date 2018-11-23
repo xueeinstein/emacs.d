@@ -224,12 +224,15 @@ Org files can be converted to pdf or html files easily. With Latex supports, it'
 #+STARTUP: latexpreview
 ```
 
-Use `C-c C-e` to toggle org file export dispatcher.
+To trigger Org file export dispatcher, use `C-c C-e`.
+
+To navigate between headings in Org file, use `C-c C-j`.
 
 One handy functionality in org mode is to link other files, and then you can jump to them easily with `C-c C-o`.
 
 * `M-x org-store-link`, store current line as a org link.
 * `C-c C-l`, `M-x org-insert-link`, insert previously saved org link.
+
 
 Other useful links:
 * [Org table editor](https://orgmode.org/manual/Built_002din-table-editor.html). Moreover you can use `C-c ~` to convert to table mode which is more flexible to use `C-c C-c <`, `C-c C-c >`, `C-c C-c {`, `C-c C-c }` to modify the cell size.

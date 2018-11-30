@@ -228,6 +228,8 @@ To trigger Org file export dispatcher, use `C-c C-e`.
 
 To navigate between headings in Org file, use `C-c C-j`.
 
+To insert tags, move the cursor in a headline that you want to tag, then use `C-c C-c`.
+
 One handy functionality in org mode is to link other files, and then you can jump to them easily with `C-c C-o`.
 
 * `M-x org-store-link`, store current line as a org link.

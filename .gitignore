@@ -45,3 +45,4 @@ site-lisp/package/
 abbrev_defs
 session.*
 pyim/
+.snooze.org

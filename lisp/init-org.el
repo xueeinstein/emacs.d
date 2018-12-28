@@ -379,6 +379,7 @@ typical word processor."
      (ditaa . t)
      (dot . t)
      (emacs-lisp . t)
+     (lisp . t)
      (gnuplot . t)
      (haskell . nil)
      (latex . t)
@@ -427,11 +428,21 @@ typical word processor."
    appt-display-format 'window)   ;; pass warnings to the designated window function
   (appt-activate 1)                ;; activate appointment notification
   (display-time)                   ;; activate time display
-  (org-agenda-to-appt)             ;; generate the appt list from org agenda files on emacs launch
-  (run-at-time "24:01" 3600 'org-agenda-to-appt)           ;; update appt list hourly
+
+  (defun refresh-agenda-and-appt ()
+    (progn
+      (org-agenda-list)
+      (run-with-idle-timer 2 nil 'org-agenda-redo)
+      (org-agenda-to-appt)
+      (org-agenda-quit)
+      (message "%s" "Agenda and appointment reminders refreshed")))
+
+  ;; generate the appt list from org agenda files on emacs launch
+  (refresh-agenda-and-appt)
+  (run-at-time "24:01" 3600 'refresh-agenda-and-appt)           ;; update appt list hourly
   (add-hook 'org-agenda-mode-hook
             '(lambda () (progn (setq appt-time-msg-list nil)
-                               (org-agenda-to-appt)))) ;; update appt list on agenda view
+                          (org-agenda-to-appt)))) ;; update appt list on agenda view
 
   (defun sys-notify (message)
     (progn

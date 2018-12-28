@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: pop_img
+# key: pop_img
+# --
+<a href="${1:url}" target="_blank">
+<img src="${2:url}" style="width: 100%" />
+</a>

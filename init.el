@@ -146,6 +146,7 @@
 (require 'init-annotation)
 (require 'init-pyim)
 (require 'init-deft)
+(require 'init-imenu)
 
 ;; config AUCTeX
 (setq TeX-auto-save t)

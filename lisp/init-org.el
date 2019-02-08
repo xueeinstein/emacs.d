@@ -394,8 +394,17 @@ typical word processor."
      (sql . nil)
      (sqlite . t))))
 
+;; config for org export
+(require 'ox-latex)
 (after-load 'org
-  (setq org-export-babel-evaluate nil))
+  (setq org-export-babel-evaluate nil)
+  (add-to-list 'org-latex-packages-alist '("" "minted"))
+  (setq org-latex-listings 'minted)
+  (setq org-latex-minted-options '(("frame" "lines")))
+  (setq org-latex-pdf-process
+        '("%latex -shell-escape -interaction nonstopmode -output-directory %o %f"
+          "%latex -shell-escape -interaction nonstopmode -output-directory %o %f"
+          "%latex -shell-escape -interaction nonstopmode -output-directory %o %f")))
 
 (defun disable-org-babel-exp ()
   (interactive)

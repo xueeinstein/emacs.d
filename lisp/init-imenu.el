@@ -5,6 +5,6 @@
   (setf imenu-list-size 0.18))
 
 (after-load 'helm
-  (global-set-key (kbd "C-'") 'helm-imenu))
+  (global-set-key (kbd "s-'") 'helm-imenu))
 
 (provide 'init-imenu)

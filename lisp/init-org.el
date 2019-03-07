@@ -474,5 +474,9 @@ typical word processor."
 (setq org-columns-default-format
       "%25ITEM %TODO %3PRIORITY %TIMESTAMP %SCHEDULED %DEADLINE")
 
+;; set up imenu
+(after-load 'org
+  (setf org-imenu-depth 3))
+
 
 (provide 'init-org)

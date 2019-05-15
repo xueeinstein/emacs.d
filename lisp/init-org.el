@@ -394,8 +394,17 @@ typical word processor."
      (sql . nil)
      (sqlite . t))))
 
+;; config for org export
+(require 'ox-latex)
 (after-load 'org
-  (setq org-export-babel-evaluate nil))
+  (setq org-export-babel-evaluate nil)
+  (add-to-list 'org-latex-packages-alist '("" "minted"))
+  (setq org-latex-listings 'minted)
+  (setq org-latex-minted-options '(("frame" "lines") ("breaklines")))
+  (setq org-latex-pdf-process
+        '("%latex -shell-escape -interaction nonstopmode -output-directory %o %f"
+          "%latex -shell-escape -interaction nonstopmode -output-directory %o %f"
+          "%latex -shell-escape -interaction nonstopmode -output-directory %o %f")))
 
 (defun disable-org-babel-exp ()
   (interactive)
@@ -464,6 +473,10 @@ typical word processor."
 ;; show important times
 (setq org-columns-default-format
       "%25ITEM %TODO %3PRIORITY %TIMESTAMP %SCHEDULED %DEADLINE")
+
+;; set up imenu
+(after-load 'org
+  (setf org-imenu-depth 3))
 
 
 (provide 'init-org)

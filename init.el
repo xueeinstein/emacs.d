@@ -147,6 +147,7 @@
 (require 'init-pyim)
 (require 'init-deft)
 (require 'init-imenu)
+(require 'init-mu4e)
 
 ;; config AUCTeX
 (setq TeX-auto-save t)

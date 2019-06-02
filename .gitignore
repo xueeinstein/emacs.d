@@ -46,3 +46,5 @@ abbrev_defs
 session.*
 pyim/
 .snooze.org
+
+lisp/init-mu4e.el

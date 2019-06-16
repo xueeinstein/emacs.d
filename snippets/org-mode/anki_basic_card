@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: anki_basic_card
+# key: akb
+# --
+
+** ${1:card_title}
+   :PROPERTIES:
+   :ANKI_DECK: ${2:$$(anki-default-deck)}
+   :ANKI_NOTE_TYPE: Basic
+   :END:
+
+*** Front
+    ${1:$(yas-text)}
+
+*** Back
+    ${3:back}

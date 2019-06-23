@@ -6,6 +6,7 @@
 (require-package 'evil-nerd-commenter)
 (require 'evil-easymotion)
 (require 'evil-vimish-fold)
+(require 'helm-evil-markers)
 
 (global-evil-leader-mode)
 (evil-mode 1)
@@ -88,5 +89,8 @@
 
 ;; better code search like 'name_subname'
 (modify-syntax-entry ?_ "w" (standard-syntax-table))
+
+;; enable helm-evil-markers
+(helm-evil-markers-toggle)
 
 (provide 'init-evil)

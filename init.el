@@ -135,6 +135,7 @@
 (require 'init-elpy)
 (require 'init-ess)
 (require 'init-cpp)
+(require 'init-go)
 (require 'init-buffer-move)
 (require 'init-org-trello)
 (require 'init-org-brain)

@@ -149,6 +149,7 @@
 (require 'init-deft)
 (require 'init-imenu)
 (require 'init-mu4e)
+(require 'init-esh)
 
 ;; config AUCTeX
 (setq TeX-auto-save t)

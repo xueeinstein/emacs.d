@@ -118,4 +118,15 @@ more-helpful local prompt."
 (setq-default eshell-prompt-function #'eshell/eshell-local-prompt-function)
 (setq eshell-highlight-prompt nil)
 
+;; function to run last command
+(defun run-last-eshell-command ()
+  "Run last eshell command."
+  (interactive)
+  (let ((buffer (get-buffer "*eshell*")))
+    (with-current-buffer buffer
+      (save-excursion
+        (eshell-previous-matching-input-from-input 1)
+        (eshell-send-input))
+      (eshell-postoutput-scroll-to-bottom))))
+
 (provide 'init-esh)

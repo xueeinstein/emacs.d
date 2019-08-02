@@ -73,8 +73,11 @@
      (setq fic-highlighted-words '("FIXME" "TODO" "BUG" "KLUDGE" "NOTE"))
      (setq fic-search-list-re (regexp-opt fic-highlighted-words 'words))))
 
-;; add hs-minor-mode hook to programming mode
-(add-hook 'prog-mode-hook 'hs-minor-mode)
+;; add hs-minor-mode hook to programming mode except EIN notebook
+(add-hook 'prog-mode-hook
+          #'(lambda ()
+              (unless (derived-mode-p 'ein:notebook-multilang-mode)
+                (hs-minor-mode))))
 ;; add line-mode hook to programming mode
 (add-hook 'prog-mode-hook 'linum-mode)
 ;; hightlight attention keywords

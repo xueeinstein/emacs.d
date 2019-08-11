@@ -150,6 +150,7 @@
 (require 'init-imenu)
 (require 'init-mu4e)
 (require 'init-esh)
+(require 'init-pdf)
 
 ;; config AUCTeX
 (setq TeX-auto-save t)

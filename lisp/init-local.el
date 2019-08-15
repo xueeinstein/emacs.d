@@ -44,4 +44,10 @@
 (eval-after-load 'reftex
   '(define-key reftex-mode-map (kbd "C-x c") 'reftex-citation))
 
+;; ==================================
+;; config manual installation
+;; under 'site-lisp' folder
+;; ==================================
+(require 'dart-mode)
+
 (provide 'init-local)

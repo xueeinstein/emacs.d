@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: anki tags
+# key: akt
+# --
+:ANKI_TAGS: $1

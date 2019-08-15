@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: colorful font
+# key: fc
+# --
+{{{color($1,$2)}}} $3

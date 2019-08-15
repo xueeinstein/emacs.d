@@ -478,5 +478,27 @@ typical word processor."
 (after-load 'org
   (setf org-imenu-depth 3))
 
+;; set up font face for emphasis
+(setq org-hide-emphasis-markers t)
+(font-lock-add-keywords  ;; see https://emacs-china.org/t/topic/3621
+ 'org-mode
+ '(("{{{[ \n]*\\(bg\\)?color[ \n]*(\\([#0-9a-zA-Z]+\\)[ \n]*,\\([^,]+?\\))}}}"
+    (2 (progn
+         (put-text-property (match-beginning 2) (match-end 2)
+                            'display
+                            (car org-script-display))
+         font-lock-comment-face)
+       t t)
+    (3 (let ((bg (match-string 1))
+             (color (match-string 2)))
+         (add-text-properties (match-beginning 0) (match-beginning 2)
+                              '(invisible org-link))
+         (add-text-properties (match-end 3) (match-end 0)
+                              '(invisible org-link))
+         (add-text-properties (- (match-beginning 3) 1) (match-beginning 3)
+                              '(invisible org-link))
+         (list (if (equal bg "bg") :background :foreground) color))
+       prepend t)))
+ 'append)
 
 (provide 'init-org)

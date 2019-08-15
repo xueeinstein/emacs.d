@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: org colorful font
+# key: org_color
+# --
+#+MACRO: color @@html:<span style="color:\$1">\$2</span>@@@@latex:\textcolor{\$1}{\$2}@@
+#+MACRO: bgcolor @@html:<span style="background-color:\$1;">\$2</span>@@@@latex:\$2@@

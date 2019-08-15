@@ -30,7 +30,8 @@
 (add-to-list 'package-archives `("melpa" . ,(if (< emacs-major-version 24)
                                                 "http://melpa.org/packages/"
                                               "https://melpa.org/packages/")))
-
+(add-to-list 'package-archives
+             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 ;; For elpy
 ;(add-to-list 'package-archives '("elpy" . "http://marmalade-repo.org/packages/"))
 

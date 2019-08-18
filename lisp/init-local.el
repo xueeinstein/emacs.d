@@ -50,4 +50,10 @@
 ;; ==================================
 (require 'dart-mode)
 
+(require 'langtool)
+(setq langtool-java-classpath
+      "/usr/bin/languagetool:/usr/share/java/languagetool/*")
+(setq langtool-bin "/usr/bin/languagetool")
+(setq langtool-default-language "en-US")
+
 (provide 'init-local)

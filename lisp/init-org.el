@@ -501,4 +501,6 @@ typical word processor."
        prepend t)))
  'append)
 
+(eval-after-load 'org '(require 'org-pdfview))
+
 (provide 'init-org)

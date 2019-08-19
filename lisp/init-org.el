@@ -503,4 +503,7 @@ typical word processor."
 
 (eval-after-load 'org '(require 'org-pdfview))
 
+;; fix xdg-open not working
+(setq process-connection-type nil)
+
 (provide 'init-org)

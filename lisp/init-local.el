@@ -52,14 +52,19 @@
 (eyebrowse-mode t)
 
 (require 'doom-modeline)
+(setq doom-modeline-icon (display-graphic-p))
+(setq doom-modeline-major-mode-icon t)
+(setq doom-modeline-major-mode-color-icon t)
+(setq doom-modeline-buffer-state-icon t)
+(setq doom-modeline-buffer-modification-icon t)
+(setq doom-modeline-minor-modes (featurep 'minions))
+(setq doom-modeline-mu4e t)
 (doom-modeline-mode 1)
 
 ;; ==================================
 ;; config manual installation
 ;; under 'site-lisp' folder
 ;; ==================================
-(require 'dart-mode)
-
 (require 'langtool)
 (setq langtool-java-classpath
       "/usr/bin/languagetool:/usr/share/java/languagetool/*")

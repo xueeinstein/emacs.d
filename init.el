@@ -145,7 +145,6 @@
 (require 'init-fun)
 (require 'init-anki)
 (require 'init-annotation)
-(require 'init-pyim)
 (require 'init-deft)
 (require 'init-imenu)
 (require 'init-mu4e)

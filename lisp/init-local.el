@@ -45,6 +45,16 @@
   '(define-key reftex-mode-map (kbd "C-x c") 'reftex-citation))
 
 ;; ==================================
+;; misc config
+;; ==================================
+(setq eyebrowse-keymap-prefix (kbd "<f2>"))
+(require 'eyebrowse)
+(eyebrowse-mode t)
+
+(require 'doom-modeline)
+(doom-modeline-mode 1)
+
+;; ==================================
 ;; config manual installation
 ;; under 'site-lisp' folder
 ;; ==================================

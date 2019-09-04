@@ -1,10 +1,11 @@
 (when (< emacs-major-version 24)
   (require-package 'org))
 (require-package 'org-fstree)
-(when *is-a-mac*
-  (require-package 'org-mac-link)
-  (autoload 'org-mac-grab-link "org-mac-link" nil t)
-  (require-package 'org-mac-iCal))
+(require-package 'org-plus-contrib)
+;;(when *is-a-mac*
+  ;;(require-package 'org-mac-link)
+  ;;(autoload 'org-mac-grab-link "org-mac-link" nil t)
+  ;;(require-package 'org-mac-iCal))
 
 (define-key global-map (kbd "C-c l") 'org-store-link)
 (define-key global-map (kbd "C-c a") 'org-agenda)

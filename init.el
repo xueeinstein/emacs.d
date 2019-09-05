@@ -52,7 +52,6 @@
 (require-package 'scratch)
 (require-package 'mwe-log-commands)
 (require-package 'find-file-in-project)
-(require-package 'neotree)
 (require-package 'yasnippet)
 (require-package 'evil-easymotion)
 (require-package 'zencoding-mode)
@@ -128,7 +127,7 @@
 (require 'init-ledger)
 
 ;; my new config
-(require 'init-neotree)
+(require 'init-project-explorer)
 (require 'init-yasnippet)
 (require 'init-evil)
 (require 'init-zencoding)

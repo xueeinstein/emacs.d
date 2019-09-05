@@ -282,7 +282,10 @@ typical word processor."
 
 ;;; Show the clocked-in task - if any - in the header line
 (defun sanityinc/show-org-clock-in-header-line ()
-  (setq-default header-line-format '((" " org-mode-line-string " "))))
+  (setq-default header-line-format '((" " org-mode-line-string " ")))
+  ;; remove org clock and task info in mode line
+  (setq global-mode-string
+        (remove 'org-mode-line-string global-mode-string)))
 
 (defun sanityinc/hide-org-clock-from-header-line ()
   (setq-default header-line-format nil))

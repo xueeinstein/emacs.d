@@ -96,4 +96,7 @@
 ;; enable helm-evil-markers
 (helm-evil-markers-toggle)
 
+;; disable evil in image-mode so that keybinding 'f', 'b' etc., is useful
+(evil-set-initial-state 'image-mode 'emacs)
+
 (provide 'init-evil)

@@ -1,8 +1,9 @@
 (when *is-a-mac*
   (setq mac-command-modifier 'meta)
   (setq mac-option-modifier 'super)
-  (setq mac-control-modifier 'hyper)
-  (setq ns-function-modifier 'control)
+  ;; (setq mac-control-modifier 'hyper)
+  ;; (setq ns-function-modifier 'control)
+  (setq mac-control-modifier 'control)
   (setq default-input-method "MacOSX")
   ;; Make mouse wheel / trackpad scrolling less jerky
   (setq mouse-wheel-scroll-amount '(1

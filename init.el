@@ -3,6 +3,12 @@
 
 (setq gc-cons-threshold 100000000)
 
+;; uncomment to enable proxy
+;; (setq url-proxy-services
+;;        '(("no_proxy" . "^\\(localhost\\|10.*\\)")
+;;          ("http" . "127.0.0.1:8123")
+;;          ("https" . "127.0.0.1:8123")))
+
 (let ((minver "23.3"))
   (when (version<= emacs-version "23.1")
     (error "Your Emacs is too old -- this config requires v%s or higher" minver)))

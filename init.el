@@ -145,7 +145,7 @@
 (require 'init-org-trello)
 (require 'init-org-brain)
 (require 'init-ssh-deploy)
-(require 'init-bing-dict)
+(require 'init-youdao-dict)
 (require 'init-elfeed)
 (require 'init-fun)
 (require 'init-anki)

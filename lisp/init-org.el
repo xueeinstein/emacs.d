@@ -426,10 +426,12 @@ typical word processor."
   (setq org-icalendar-include-todo '(all))
   (setq org-icalendar-use-scheduled '(event-if-todo event-if-not-todo))
   (setq org-icalendar-use-deadline '(event-if-todo event-if-not-todo))
-  (defun my-icalendar-agenda-export()
-    (if (string= (file-name-extension (buffer-file-name)) "org")
-        (org-icalendar-combine-agenda-files)))
-  (add-hook 'after-save-hook 'my-icalendar-agenda-export))
+  ;; disable auto export as it is CPU-consuming.
+  ;; (defun my-icalendar-agenda-export()
+  ;;   (if (string= (file-name-extension (buffer-file-name)) "org")
+  ;;       (org-icalendar-combine-agenda-files)))
+  ;; (add-hook 'after-save-hook 'my-icalendar-agenda-export)
+  )
 
 
 

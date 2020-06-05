@@ -45,6 +45,12 @@
   '(define-key reftex-mode-map (kbd "C-x c") 'reftex-citation))
 
 ;; ==================================
+;; rebind cdlatex-tab
+;; ==================================
+(eval-after-load 'cdlatex
+  '(define-key cdlatex-mode-map (kbd "<C-tab>") 'cdlatex-tab))
+
+;; ==================================
 ;; misc config
 ;; ==================================
 (setq eyebrowse-keymap-prefix (kbd "<f2>"))

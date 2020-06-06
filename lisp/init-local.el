@@ -45,10 +45,12 @@
   '(define-key reftex-mode-map (kbd "C-x c") 'reftex-citation))
 
 ;; ==================================
-;; rebind cdlatex-tab
+;; config cdlatex
 ;; ==================================
-(eval-after-load 'cdlatex
-  '(define-key cdlatex-mode-map (kbd "<C-tab>") 'cdlatex-tab))
+(after-load 'cdlatex
+  (define-key cdlatex-mode-map (kbd "<C-tab>") 'cdlatex-tab)
+  (add-to-list 'cdlatex-math-modify-alist
+               '( ?a "\\mathbb" nil t nil nil)))
 
 ;; ==================================
 ;; misc config

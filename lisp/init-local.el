@@ -50,7 +50,15 @@
 (after-load 'cdlatex
   (define-key cdlatex-mode-map (kbd "<C-tab>") 'cdlatex-tab)
   (add-to-list 'cdlatex-math-modify-alist
-               '( ?a "\\mathbb" nil t nil nil)))
+               '( ?a "\\mathbb" nil t nil nil))
+  (add-to-list 'cdlatex-math-modify-alist
+               '( ?o "\\operatorname" nil t nil nil))
+  (add-to-list 'cdlatex-math-modify-alist
+               '( ?t "\\text" nil t nil nil))
+  (add-to-list 'cdlatex-math-modify-alist
+               '( ?s "\\boldsymbol" nil t nil nil))
+  (add-to-list 'cdlatex-math-symbol-alist
+               '( ?8 ("\\infty" "\\propto"))))
 
 ;; ==================================
 ;; misc config

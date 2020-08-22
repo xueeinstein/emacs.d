@@ -22,6 +22,12 @@
   )
 (setq matlab-shell-mode-hook 'my-matlab-shell-mode-hook)
 
+;; ================================
+;; Octave mode
+;; ================================
+(setq auto-mode-alist
+      (cons '("\\.m$" . octave-mode) auto-mode-alist))
+
 ;; ==================================
 ;; project file retriever
 ;; ==================================
@@ -58,7 +64,9 @@
   (add-to-list 'cdlatex-math-modify-alist
                '( ?s "\\boldsymbol" nil t nil nil))
   (add-to-list 'cdlatex-math-symbol-alist
-               '( ?8 ("\\infty" "\\propto"))))
+               '( ?8 ("\\infty" "\\propto")))
+  (add-to-list 'cdlatex-math-symbol-alist
+               '( ?F ("\\Phi"  ))))
 
 ;; ==================================
 ;; misc config

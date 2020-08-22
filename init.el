@@ -140,6 +140,7 @@
 (require 'init-elpy)
 (require 'init-ess)
 (require 'init-cpp)
+(require 'init-rust)
 (require 'init-go)
 (require 'init-buffer-move)
 (require 'init-org-trello)

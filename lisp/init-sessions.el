@@ -3,13 +3,17 @@
       desktop-auto-save-timeout 600)
 (desktop-save-mode 1)
 
-(defadvice desktop-read (around time-restore activate)
-    (let ((start-time (current-time)))
-      (prog1
-          ad-do-it
-        (message "Desktop restored in %.2fms"
-                 (sanityinc/time-subtract-millis (current-time)
-                                                 start-time)))))
+;; incompatible with emacs 27
+;; (defadvice desktop-read (around time-restore activate)
+;;   (let ((start-time (current-time)))
+;;     (prog1
+;;         ;; (if (version< emacs-version "27")
+;;         ;;     ad-do-it
+;;         ;;   (ad-do-it user-emacs-directory))
+;;         ad-do-it
+;;       (message "Desktop restored in %.2fms"
+;;                (sanityinc/time-subtract-millis (current-time)
+;;                                                start-time)))))
 
 (defadvice desktop-create-buffer (around time-create activate)
   (let ((start-time (current-time))

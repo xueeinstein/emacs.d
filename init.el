@@ -156,6 +156,7 @@
 (require 'init-mu4e)
 (require 'init-esh)
 (require 'init-pdf)
+(require 'init-eaf)
 
 ;; config AUCTeX
 (setq TeX-auto-save t)

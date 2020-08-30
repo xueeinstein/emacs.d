@@ -85,6 +85,9 @@
 (setq doom-modeline-mu4e t)
 (doom-modeline-mode 1)
 
+(require 'hyperbole)
+(require 'kotl-autoloads)
+
 ;; ==================================
 ;; config manual installation
 ;; under 'site-lisp' folder

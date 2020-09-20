@@ -1,3 +1,6 @@
 [submodule "site-lisp/langtool"]
 	path = site-lisp/langtool
 	url = https://github.com/mhayashi1120/Emacs-langtool.git
+[submodule "site-lisp/hyperbole"]
+	path = site-lisp/hyperbole
+	url = https://github.com/rswgnu/hyperbole.git

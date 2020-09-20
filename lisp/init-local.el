@@ -34,6 +34,11 @@
 (global-set-key (kbd "C-c C-f") 'ffip) ; find file in project
 
 ;; ==================================
+;; Emacs 27 tab bar
+;; ==================================
+(global-set-key (kbd "s-;") 'tab-bar-select-tab-by-name)
+
+;; ==================================
 ;; set font size in frame
 ;; ==================================
 (defun set-font-size ()

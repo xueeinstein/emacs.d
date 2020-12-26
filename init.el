@@ -157,6 +157,7 @@
 (require 'init-esh)
 (require 'init-pdf)
 (require 'init-eaf)
+(require 'init-tide)
 
 ;; config AUCTeX
 (setq TeX-auto-save t)

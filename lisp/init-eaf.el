@@ -53,4 +53,7 @@ This uses `helm-bookmark-preds+' to make it easier to add categories."
                            app))))))
      helm-bookmark-default-filtered-sources)))
 
+(with-eval-after-load 'elfeed
+  (define-key elfeed-search-mode-map (kbd "RET") 'eaf-elfeed-open-url))
+
 (provide 'init-eaf)

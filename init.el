@@ -63,14 +63,14 @@
 (require-package 'zencoding-mode)
 (require-package 'ess)
 (require-package 'buffer-move)
-(require-package 'org-trello)
+;(require-package 'org-trello)
 
 (require 'init-frame-hooks)
 (require 'init-xterm)
 (require 'init-themes)
 (require 'init-osx-keys)
 (require 'init-gui-frames)
-(require 'init-dired)
+;;(require 'init-dired)
 (require 'init-isearch)
 (require 'init-grep)
 (require 'init-uniquify)
@@ -87,7 +87,7 @@
 (require 'init-fonts)
 (require 'init-mmm)
 
-(require 'init-editing-utils)
+;;(require 'init-editing-utils)
 (require 'init-whitespace)
 (require 'init-fci)
 
@@ -115,7 +115,7 @@
 (require 'init-rails)
 (require 'init-sql)
 
-(require 'init-paredit)
+;;(require 'init-paredit)
 (require 'init-lisp)
 (require 'init-slime)
 (unless (version<= emacs-version "24.2")
@@ -144,7 +144,8 @@
 (require 'init-go)
 (require 'init-python-mode)
 (require 'init-buffer-move)
-(require 'init-org-trello)
+
+;;(require 'init-org-trello)
 (require 'init-org-brain)
 (require 'init-ssh-deploy)
 (require 'init-youdao-dict)

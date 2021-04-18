@@ -36,12 +36,17 @@
 ;; ==================================
 ;; Emacs 27 tab bar
 ;; ==================================
-(when (not (version< emacs-version "27.1"))
+(when (and (not (version< emacs-version "27.1")) (version< emacs-version "28.0"))
   (global-set-key (kbd "s-;") 'tab-bar-select-tab-by-name)
   (global-set-key (kbd "s-[") 'tab-bar-switch-to-prev-tab)
   (global-set-key (kbd "s-]") 'tab-bar-switch-to-next-tab)
   (global-set-key (kbd "s-/") 'tab-bar-rename-tab))
 
+(when (not (version< emacs-version "28.0"))
+  (global-set-key (kbd "H-s-;") 'tab-bar-select-tab-by-name)
+  (global-set-key (kbd "H-s-[") 'tab-bar-switch-to-prev-tab)
+  (global-set-key (kbd "H-s-]") 'tab-bar-switch-to-next-tab)
+  (global-set-key (kbd "H-s-/") 'tab-bar-rename-tab))
 
 ;; ==================================
 ;; set font size in frame

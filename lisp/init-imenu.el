@@ -5,6 +5,9 @@
   (setf imenu-list-size 0.18))
 
 (after-load 'helm
-  (global-set-key (kbd "s-'") 'helm-imenu))
+  (when (and (not (version< emacs-version "27.1")) (version< emacs-version "28.0"))
+    (global-set-key (kbd "s-'") 'helm-imenu))
+  (when (not (version< emacs-version "28.0"))
+    (global-set-key (kbd "H-s-'") 'helm-imenu)))
 
 (provide 'init-imenu)

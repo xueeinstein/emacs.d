@@ -34,7 +34,6 @@
 (transient-mark-mode t)
 
 
-
 ;;; Newline behaviour
 
 (global-set-key (kbd "RET") 'newline-and-indent)
@@ -46,7 +45,6 @@
 
 (global-set-key (kbd "S-<return>") 'sanityinc/newline-at-end-of-line)
 
-
 
 (when (eval-when-compile (string< "24.3.1" emacs-version))
   ;; https://github.com/purcell/emacs.d/issues/138
@@ -212,7 +210,8 @@
 ;;----------------------------------------------------------------------------
 ;; Cut/copy the current line if no region is active
 ;;----------------------------------------------------------------------------
-(require-package 'whole-line-or-region)
+;(require-package 'whole-line-or-region)
+(require 'whole-line-or-region)
 (whole-line-or-region-mode t)
 (diminish 'whole-line-or-region-mode)
 (make-variable-buffer-local 'whole-line-or-region-mode)

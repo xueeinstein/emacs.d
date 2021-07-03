@@ -5,5 +5,10 @@
 
 (require-package 'pip-requirements)
 
+;; enable python language server by default
+;; (require-package 'use-package)
+;; (use-package lsp-mode
+;;   :hook (python-mode . lsp)
+;;   :commands lsp)
 
 (provide 'init-python-mode)

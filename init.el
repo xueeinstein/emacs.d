@@ -87,7 +87,7 @@
 (require 'init-fonts)
 (require 'init-mmm)
 
-;;(require 'init-editing-utils)
+(require 'init-editing-utils)
 (require 'init-whitespace)
 (require 'init-fci)
 
@@ -115,7 +115,7 @@
 (require 'init-rails)
 (require 'init-sql)
 
-;;(require 'init-paredit)
+(require 'init-paredit)
 (require 'init-lisp)
 (require 'init-slime)
 (unless (version<= emacs-version "24.2")
@@ -139,7 +139,7 @@
 (require 'init-elpy)
 (require 'init-ess)
 (require 'init-cpp)
-(require 'init-java)
+;;(require 'init-java)
 (require 'init-rust)
 (require 'init-go)
 (require 'init-python-mode)
